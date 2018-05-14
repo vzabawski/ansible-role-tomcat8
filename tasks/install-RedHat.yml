@@ -18,6 +18,7 @@
   unarchive:
     src: "{{ tomcat_binary_url }}"
     dest: "/opt/"
+    creates: "{{ tomcat_target_dir }}"
     remote_src: yes
   sudo: True
 
